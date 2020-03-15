@@ -26,6 +26,10 @@ end
 
 def get_english_meaning(pa, jap_emo)
   h = load_library(pa)
-  mean = h['get_meaning'][jap_emo]
-  return mean
+  if h['get_meaning'][jap_emo]
+    mean = h['get_meaning'][jap_emo]
+    return mean
+  else 
+    return "Sorry, we don't have a translation for that emoticon"
+  end
 end
