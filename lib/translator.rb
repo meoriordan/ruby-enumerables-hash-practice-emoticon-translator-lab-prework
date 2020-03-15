@@ -19,7 +19,7 @@ def get_japanese_emoticon(pa, emo)
     jap_emo = h['get_emoticon'][emo]
     return jap_emo
   else
-    puts 'Sorry, we dont have that emoticon'
+    puts "Sorry, that emoticon was not found"
   end
   # return jap_emo
 end
