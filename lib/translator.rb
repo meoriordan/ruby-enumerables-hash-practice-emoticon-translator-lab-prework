@@ -30,6 +30,6 @@ def get_english_meaning(pa, jap_emo)
     mean = h['get_meaning'][jap_emo]
     return mean
   else 
-    return "Sorry, we don't have a translation for that emoticon"
+    return "Sorry, that emoticon was not found"
   end
 end
